@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <title>Media Queries</title>
+        <style>
+
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column; 
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+          
+            li {
+                margin-left: 10px;
+                list-style-type: none;
+            }
+            .body {
+                background-color: lightgrey;
+                margin:0;
+                padding:0;
+                border-style: none;
+            }
+
+            @media screen and (min-width:320px) and (max-width:480px) {
+                .header { background: red; }
+            }
+
+            @media screen and (min-width:481px) and (max-width:768px) {
+                .header {
+                    background: blue;
+                }
+            }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                .header {
+                    background: orange;
+                }
+            }
+
+
+            .header {
+                text-align: center;
+                background-color: green;
+                color: black;
+                padding: 25px;
+                margin:10px;
+                font-size: 60px;   
+            }
+
+         
+
+            .navbar {
+              display:flex;
+              flex-wrap: wrap;
+              background-color: black; 
+              color: white;
+            }
+
+            .nav a {
+                text-decoration: none; 
+                padding: 20px;
+                margin:10px;
+                text-align: start;
+             }
+
+
+            .main {
+                font-size: 20px;
+                font-style: italic;
+                background-color: rgb(218, 215, 215);
+                justify-content: flex-start;
+                padding: 10px;
+                margin: 5px;
+            }
+
+          
+          
+            
+            .life, 
+            .business, 
+            .sports {
+                font-size: 50px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-display: underline;
+                padding: 10px;
+                margin: 5px;   
+            }
+
+           
+
+
+        </style>
+    </head>
+        
+        <body>
+
+
+            <h1>Media Queries</h1>
+            <div class="header"><h1>Online Magazine</h1></div>
+
+            <div class="navbar">
+                <ul>
+                    <li a href="#">Home</li>
+                    <li a href="#">About Us</li>
+                    <li a href="#">Contact Us</li>
+                </ul>
+            </div>
+            
+            <div class="flex-container">
+                <section class="main">
+                    
+                    <div class="life">Lifestyle</div>
+                        <p>You only have one life, so don't waste it. Do something you really want to do, love someone you really want to love and stop being afraid of losing things that you've never actually had.</p>
+                    <div class="business">Business</div>
+                        <p>In the simplest terms, business messaging is a way for businesses to communicate with each other and their customers. This can include anything from notifications about an order to delivery updates or questions about a product or service. Business messaging can be a valuable tool for businesses of all sizes.</p>
+                    <div class="sports">Sports</div>
+                        <p>"It's just a job. Grass grows, birds fly, waves pound the sand. I beat people up." -Muhammad Ali</p>
+                </section>
+            </div>
+        </body>
+</html>
